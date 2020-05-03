@@ -30,7 +30,6 @@ margin_bottom = 236.0
 rect_scale = Vector2( 2, 2 )
 hint_tooltip = "Inicia una nueva partida
 o borra la guardada"
-disabled = true
 text = "Nuevo Juego"
 __meta__ = {
 "_edit_use_anchors_": false

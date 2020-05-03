@@ -1,6 +1,7 @@
 extends Control
 
 func NuevoJuego():
+	get_tree().change_scene("res://Escenas/EscenarioGeneral.tscn")
 	#Nuevo juego sin guardar
 	pass
 
