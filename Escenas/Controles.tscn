@@ -1,0 +1,158 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/Controles.gd" type="Script" id=1]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="lblMovimiento" type="Label" parent="."]
+margin_left = 248.0
+margin_top = 40.0
+margin_right = 416.0
+margin_bottom = 72.0
+rect_scale = Vector2( 2, 2 )
+text = "Controles de movimiento"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="lblArriba" type="Label" parent="lblMovimiento"]
+margin_left = 4.0
+margin_top = 64.0
+margin_right = 68.0
+margin_bottom = 96.0
+text = "Arriba"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="lblAbajo" type="Label" parent="lblMovimiento"]
+margin_left = 4.0
+margin_top = 192.0
+margin_right = 68.0
+margin_bottom = 224.0
+text = "Abajo"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="lblIzquierda" type="Label" parent="lblMovimiento"]
+margin_left = 4.0
+margin_top = 128.0
+margin_right = 68.0
+margin_bottom = 160.0
+text = "Izquierda"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="lblDerecha" type="Label" parent="lblMovimiento"]
+margin_left = 4.0
+margin_top = 256.0
+margin_right = 68.0
+margin_bottom = 288.0
+text = "Derecha"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="lblArriba2" type="Label" parent="lblMovimiento"]
+margin_left = 100.0
+margin_top = 64.0
+margin_right = 164.0
+margin_bottom = 96.0
+text = "W"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="lblAbajo2" type="Label" parent="lblMovimiento"]
+margin_left = 100.0
+margin_top = 192.0
+margin_right = 164.0
+margin_bottom = 224.0
+text = "S"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="lblIzquierda2" type="Label" parent="lblMovimiento"]
+margin_left = 100.0
+margin_top = 128.0
+margin_right = 164.0
+margin_bottom = 160.0
+text = "A"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="lblDerecha2" type="Label" parent="lblMovimiento"]
+margin_left = 100.0
+margin_top = 256.0
+margin_right = 164.0
+margin_bottom = 288.0
+text = "D"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="lblAccion" type="Label" parent="."]
+margin_left = 704.0
+margin_top = 40.0
+margin_right = 832.0
+margin_bottom = 72.0
+rect_scale = Vector2( 2, 2 )
+text = "Controles de accion"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="lblMouse" type="Label" parent="lblAccion"]
+margin_left = 20.0
+margin_top = 64.0
+margin_right = 116.0
+margin_bottom = 96.0
+text = "Click Derecho"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="btnVolver" type="Button" parent="."]
+margin_left = 528.0
+margin_top = 680.0
+margin_right = 640.0
+margin_bottom = 704.0
+rect_scale = Vector2( 2, 2 )
+text = "Volver al menu"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="btnVolver" to="." method="volver"]
