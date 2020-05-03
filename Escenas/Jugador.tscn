@@ -19,11 +19,6 @@ extents = Vector2( 11.5096, 13.819 )
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
-"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 6 ) ],
-"loop": true,
-"name": "arriba",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 4 ), ExtResource( 12 ), ExtResource( 5 ) ],
 "loop": true,
 "name": "abajo",
@@ -38,9 +33,14 @@ animations = [ {
 "loop": true,
 "name": "derecha",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 6 ) ],
+"loop": true,
+"name": "arriba",
+"speed": 5.0
 } ]
 
-[node name="Node2D" type="KinematicBody2D"]
+[node name="Jugador" type="KinematicBody2D"]
 script = ExtResource( 9 )
 __meta__ = {
 "_edit_lock_": true
@@ -49,7 +49,7 @@ __meta__ = {
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+[node name="AnimatedSprite" type="AnimatedSprite" parent="CollisionShape2D"]
 position = Vector2( -0.0717964, -2.15394 )
 scale = Vector2( 2, 2 )
 frames = SubResource( 2 )

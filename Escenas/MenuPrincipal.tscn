@@ -11,11 +11,11 @@ __meta__ = {
 [node name="lblTitulo" type="Label" parent="."]
 margin_left = 464.0
 margin_top = 64.0
-margin_right = 639.0
+margin_right = 641.0
 margin_bottom = 95.0
 rect_scale = Vector2( 2, 2 )
 text = "AFCTE
-Asi Fue Como Te Estafaron"
+(Asi Fue Como Te Estafaron)"
 align = 1
 valign = 1
 __meta__ = {
@@ -23,11 +23,11 @@ __meta__ = {
 }
 
 [node name="btnNuevoJuego" type="Button" parent="."]
-margin_left = 552.0
-margin_top = 240.0
-margin_right = 670.0
-margin_bottom = 260.0
-rect_scale = Vector2( 1.5, 1.5 )
+margin_left = 520.0
+margin_top = 216.0
+margin_right = 640.0
+margin_bottom = 236.0
+rect_scale = Vector2( 2, 2 )
 hint_tooltip = "Inicia una nueva partida
 o borra la guardada"
 disabled = true
@@ -41,11 +41,11 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = 576.0
-margin_top = 368.0
-margin_right = 660.0
-margin_bottom = 388.0
-rect_scale = Vector2( 1.5, 1.5 )
+margin_left = 552.0
+margin_top = 344.0
+margin_right = 640.0
+margin_bottom = 364.0
+rect_scale = Vector2( 2, 2 )
 hint_tooltip = "Continua con tu progreso"
 disabled = true
 text = "Continuar"
@@ -54,23 +54,22 @@ __meta__ = {
 }
 
 [node name="btnCreditos" type="Button" parent="."]
-margin_left = 576.0
-margin_top = 616.0
-margin_right = 661.0
-margin_bottom = 636.0
-rect_scale = Vector2( 1.5, 1.5 )
-disabled = true
+margin_left = 552.0
+margin_top = 600.0
+margin_right = 640.0
+margin_bottom = 620.0
+rect_scale = Vector2( 2, 2 )
 text = "Creditos"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="btnControles" type="Button" parent="."]
-margin_left = 576.0
-margin_top = 496.0
-margin_right = 660.0
-margin_bottom = 516.0
-rect_scale = Vector2( 1.5, 1.5 )
+margin_left = 552.0
+margin_top = 472.0
+margin_right = 640.0
+margin_bottom = 492.0
+rect_scale = Vector2( 2, 2 )
 hint_tooltip = "Revisa los controles"
 text = "Controles"
 __meta__ = {
@@ -78,11 +77,11 @@ __meta__ = {
 }
 
 [node name="btnSalir" type="Button" parent="."]
-margin_left = 576.0
-margin_top = 720.0
-margin_right = 660.0
-margin_bottom = 741.0
-rect_scale = Vector2( 1.5, 1.5 )
+margin_left = 552.0
+margin_top = 728.0
+margin_right = 640.0
+margin_bottom = 749.0
+rect_scale = Vector2( 2, 2 )
 hint_tooltip = "Sales del juego
 Que no te engañen"
 text = "Salir"
