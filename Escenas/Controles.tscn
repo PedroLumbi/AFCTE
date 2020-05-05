@@ -134,11 +134,11 @@ __meta__ = {
 }
 
 [node name="lblMouse" type="Label" parent="lblAccion"]
-margin_left = 20.0
+margin_left = 12.0
 margin_top = 64.0
 margin_right = 116.0
 margin_bottom = 96.0
-text = "Click Derecho"
+text = "Espacio o enter"
 align = 1
 valign = 1
 __meta__ = {
