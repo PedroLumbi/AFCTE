@@ -19,5 +19,4 @@ func cargarDialogo():
 
 
 func vovlerAlMenuPrincipal():
-# warning-ignore:return_value_discarded
-	get_tree().change_scene("res://Escenas/MenuPrincipal.tscn")
+	print(get_tree().change_scene("res://Escenas/MenuPrincipal.tscn"))

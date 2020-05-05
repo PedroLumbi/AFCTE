@@ -1,6 +1,9 @@
 extends KinematicBody2D
 var VELOCIDAD = 200
-
+var SpriteAnimacion
+var nombreAnimacion
+func _ready():
+	SpriteAnimacion = $CollisionShape2D/AnimatedSprite
 #Proceso fisico que se sincroniza con el procesador
 func _physics_process(_delta):
 	var movimiento = Vector2()#vector de movimiento
@@ -8,10 +11,24 @@ func _physics_process(_delta):
 	#animacion se ejecuta dentro de estos listenner
 	if Input.is_action_pressed("ui_up"):
 		movimiento.y -= VELOCIDAD
+		nombreAnimacion = "arriba"
 	if Input.is_action_pressed("ui_left"):
 		movimiento.x -= VELOCIDAD
+		nombreAnimacion = "izquierda"
 	if Input.is_action_pressed("ui_right"):
 		movimiento.x += VELOCIDAD
+		nombreAnimacion = "derecha"
 	if Input.is_action_pressed("ui_down"):
 		movimiento.y += VELOCIDAD
+		nombreAnimacion = "abajo"
+	# warning-ignore:return_value_discarded
+	if movimiento.length() > 0:
+		SpriteAnimacion.play(nombreAnimacion)
+	else:
+		SpriteAnimacion.stop()
+		SpriteAnimacion.frame = 0
 	move_and_slide(movimiento)
+
+
+func AccionSalir():
+	print(get_tree().change_scene("res://Escenas/MenuPrincipal.tscn"))

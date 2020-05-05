@@ -1,7 +1,7 @@
 extends Control
 
 func NuevoJuego():
-	get_tree().change_scene("res://Escenas/EscenarioGeneral.tscn")
+	print(get_tree().change_scene("res://Escenas/EscenarioGeneral.tscn"))
 	#Nuevo juego sin guardar
 	pass
 
@@ -10,7 +10,7 @@ func Continuar():
 	pass
 
 func Controles():
-	get_tree().change_scene("res://Escenas/Controles.tscn")
+	print(get_tree().change_scene("res://Escenas/Controles.tscn"))
 	#Pasar a la escena que contiene los controles WASD
 	pass
 
@@ -19,5 +19,5 @@ func Salir():
 
 
 func creditos():
-	get_tree().change_scene("res://Escenas/Creditos.tscn")
+	print(get_tree().change_scene("res://Escenas/Creditos.tscn"))
 	pass
