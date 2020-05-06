@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/tilemap.png-db3c71b78d85c2549c263cdae6bd67f8.stex"
+path="res://.import/tile_0242.png-2e5ff5800c79cf3dfd346f9ba6c2b50b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Scripts/tilemap.png"
-dest_files=[ "res://.import/tilemap.png-db3c71b78d85c2549c263cdae6bd67f8.stex" ]
+source_file="res://Sprites/npc1/tile_0242.png"
+dest_files=[ "res://.import/tile_0242.png-2e5ff5800c79cf3dfd346f9ba6c2b50b.stex" ]
 
 [params]
 

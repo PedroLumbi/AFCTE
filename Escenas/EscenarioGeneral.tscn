@@ -1,7 +1,8 @@
-[gd_scene load_steps=40 format=2]
+[gd_scene load_steps=41 format=2]
 
 [ext_resource path="res://Sprites/tilemap.png" type="Texture" id=1]
 [ext_resource path="res://Escenas/Jugador.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Escenas/NPC1.tscn" type="PackedScene" id=3]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
@@ -1447,4 +1448,7 @@ text = "Salir"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="npc1" parent="." instance=ExtResource( 3 )]
+position = Vector2( 88, 16 )
 [connection signal="pressed" from="Node2D/Camera2D/btnSalir" to="Node2D" method="AccionSalir"]
