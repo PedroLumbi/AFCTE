@@ -16,7 +16,6 @@ func temporizador():
 	var resultado = random.randi_range(1, 6)#dado de 6 caras
 	
 	if(resultado > 3):
-		print(resultado)
 		#se mueve
 		random.randomize()
 		resultado = random.randi_range(1,4)#tira dado de 4 caras
@@ -29,10 +28,7 @@ func temporizador():
 			movimiento.y += velocidad
 		elif(resultado == 4):
 			movimiento.y -= velocidad
-		
-			
 		pass
-	
 	#se ejecuta cada 2 segundos en FPS de la maquina
 	pass
 
