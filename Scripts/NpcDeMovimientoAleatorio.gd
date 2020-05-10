@@ -32,6 +32,9 @@ func temporizador():
 	#se ejecuta cada 2 segundos en FPS de la maquina
 	pass
 
+func dialogo():
+	$Dialogbox.show_text(["Hola, buenas tardes", "Tenga un buen dia"])
+
 func huir():
 	#cuando se termine la conversación, el npc huirá
 	#buscará el borde de la camara mas cercano y será borrado de la escena

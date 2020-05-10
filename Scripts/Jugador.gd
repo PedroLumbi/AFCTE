@@ -2,6 +2,9 @@ extends KinematicBody2D
 var VELOCIDAD = 200
 var SpriteAnimacion
 var nombreAnimacion
+
+var cuerpo = null#almacena un npc
+
 func _ready():
 	SpriteAnimacion = $CollisionShape2D/AnimatedSprite
 #Proceso fisico que se sincroniza con el procesador
@@ -21,14 +24,33 @@ func _physics_process(_delta):
 	if Input.is_action_pressed("ui_down"):
 		movimiento.y += VELOCIDAD
 		nombreAnimacion = "abajo"
-	# warning-ignore:return_value_discarded
+	if Input.is_action_pressed("ui_accept"):
+		if(cuerpo != null):
+			cuerpo.dialogo()
+			cuerpo = null
+			$Timer.stop()
+			$dialogo.hide()
+			
 	if movimiento.length() > 0:
 		SpriteAnimacion.play(nombreAnimacion)
 	else:
 		SpriteAnimacion.stop()
 		SpriteAnimacion.frame = 0
-	move_and_slide(movimiento)
+	print(move_and_slide(movimiento))
+
+func entraDialogo(body):
+	if body.is_in_group("npc"):
+		cuerpo = body
+		$Timer.start()
+		pass
+	pass
 
 
-func AccionSalir():
-	print(get_tree().change_scene("res://Escenas/MenuPrincipal.tscn"))
+
+
+func temporizador():
+	if $dialogo.visible:
+		$dialogo.hide()
+	else:
+		$dialogo.show()
+	pass # Replace with function body.
