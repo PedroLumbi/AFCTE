@@ -1,4 +1,8 @@
 Los sonidos son obtenidos y descragados de la pagina web: https://freesound.org/ . Bajo la licencia CC0 1.0 .
 
 
-https://freesound.org/people/RunnerPack/sounds/87039/
+pausa (beeps): https://freesound.org/people/RunnerPack/sounds/87039/
+
+sonido_ambiente:  https://freesound.org/people/snaksan/sounds/381422/
+
+
