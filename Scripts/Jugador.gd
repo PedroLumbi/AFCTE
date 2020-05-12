@@ -54,3 +54,8 @@ func temporizador():
 	else:
 		$dialogo.show()
 	pass # Replace with function body.
+
+
+func _on_Button_pressed():
+	$AudioPausa.play()
+	pass # Replace with function body.

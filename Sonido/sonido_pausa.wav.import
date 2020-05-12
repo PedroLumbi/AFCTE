@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/somido_pausa.wav-1be266d1a0bb629c5df5e4f98b58cb52.sample"
+path="res://.import/sonido_pausa.wav-00b38546dcd061cbfbc20cf35b71f2e2.sample"
 
 [deps]
 
-source_file="res://Sonido/somido_pausa.wav"
-dest_files=[ "res://.import/somido_pausa.wav-1be266d1a0bb629c5df5e4f98b58cb52.sample" ]
+source_file="res://Sonido/sonido_pausa.wav"
+dest_files=[ "res://.import/sonido_pausa.wav-00b38546dcd061cbfbc20cf35b71f2e2.sample" ]
 
 [params]
 
