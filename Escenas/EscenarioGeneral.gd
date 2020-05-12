@@ -5,13 +5,13 @@ extends Node2D
 func _on_btnPausa_pressed():
 	get_tree().paused = true
 	$AudioPausa.play()
-	$VentanaPausa.show()
+	$Jugador/laCamara/VentanaPausa.show()
 	print("pausa")
 	
 
 
 func _on_CerrarVentana_pressed():
-	$VentanaPausa.hide()
+	$Jugador/laCamara/VentanaPausa.hide()
 	get_tree().paused = false
 	print("despausa")
 
