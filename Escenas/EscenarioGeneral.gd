@@ -1,10 +1,23 @@
 extends Node2D
 
 
-func _ready():
-	pass # Replace with function body.
+
+func _on_btnPausa_pressed():
+	get_tree().paused = true
+	$AudioPausa.play()
+	$VentanaPausa.show()
+	print("pausa")
+	
 
 
-func vovler():
+func _on_CerrarVentana_pressed():
+	$VentanaPausa.hide()
+	get_tree().paused = false
+	print("despausa")
+
+
+
+func _on_btnSalir_pressed():
+	get_tree().paused = false
 	print(get_tree().change_scene("res://Escenas/MenuPrincipal.tscn"))
 	pass # Replace with function body.

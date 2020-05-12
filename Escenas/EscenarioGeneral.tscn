@@ -3,8 +3,8 @@
 [ext_resource path="res://Escenas/EscenarioGeneral.gd" type="Script" id=1]
 [ext_resource path="res://TileSet/EscenarioGeneral.tres" type="TileSet" id=2]
 [ext_resource path="res://Escenas/Jugador.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Sonido/sonido_pausa.wav" type="AudioStream" id=4]
-[ext_resource path="res://Escenas/NPC1.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Escenas/NPC1.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Sonido/sonido_pausa.wav" type="AudioStream" id=5]
 
 [node name="raiz" type="Node2D"]
 script = ExtResource( 1 )
@@ -39,30 +39,46 @@ position = Vector2( 272, 152 )
 [node name="laCamara" type="Camera2D" parent="Jugador"]
 current = true
 
-[node name="btnVolver" type="Button" parent="Jugador/laCamara"]
-margin_left = -592.0
-margin_top = 320.0
-margin_right = -553.0
-margin_bottom = 340.0
-rect_scale = Vector2( 2, 2 )
-text = "Salir"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Button" type="Button" parent="Jugador"]
+[node name="btnPausa" type="Button" parent="Jugador/laCamara"]
+pause_mode = 2
 margin_left = 464.88
 margin_top = 292.771
 margin_right = 576.88
 margin_bottom = 348.771
 text = "Pausa"
 
-[node name="AudioPausa" type="AudioStreamPlayer" parent="Jugador"]
-stream = ExtResource( 4 )
-
 [node name="npc1" parent="." groups=[
 "npc",
-] instance=ExtResource( 5 )]
-position = Vector2( 88, 16 )
-[connection signal="pressed" from="Jugador/laCamara/btnVolver" to="." method="vovler"]
-[connection signal="pressed" from="Jugador/Button" to="Jugador" method="_on_Button_pressed"]
+] instance=ExtResource( 4 )]
+position = Vector2( 88, 18.395 )
+
+[node name="AudioPausa" type="AudioStreamPlayer" parent="."]
+pause_mode = 2
+stream = ExtResource( 5 )
+
+[node name="VentanaPausa" type="WindowDialog" parent="."]
+pause_mode = 2
+visible = true
+margin_left = 179.022
+margin_top = 38.3192
+margin_right = 494.022
+margin_bottom = 171.319
+window_title = "Pausa"
+
+[node name="CerrarVentana" type="Button" parent="VentanaPausa"]
+margin_left = 232.909
+margin_top = 102.983
+margin_right = 305.909
+margin_bottom = 122.983
+text = "Continuar"
+
+[node name="btnSalir" type="Button" parent="VentanaPausa"]
+margin_left = 166.449
+margin_top = 102.384
+margin_right = 205.449
+margin_bottom = 122.384
+text = "Salir"
+[connection signal="pressed" from="Jugador/laCamara/btnPausa" to="." method="_on_btnPausa_pressed"]
+[connection signal="popup_hide" from="VentanaPausa" to="." method="_on_VentanaPausa_popup_hide"]
+[connection signal="pressed" from="VentanaPausa/CerrarVentana" to="." method="_on_CerrarVentana_pressed"]
+[connection signal="pressed" from="VentanaPausa/btnSalir" to="." method="_on_btnSalir_pressed"]
