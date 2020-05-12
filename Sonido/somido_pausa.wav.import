@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/somido_pausa.wav-1be266d1a0bb629c5df5e4f98b58cb52.sample"
+
+[deps]
+
+source_file="res://Sonido/somido_pausa.wav"
+dest_files=[ "res://.import/somido_pausa.wav-1be266d1a0bb629c5df5e4f98b58cb52.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
