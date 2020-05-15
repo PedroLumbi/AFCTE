@@ -7,7 +7,7 @@ func _ready():
 	$temporizador.start()
 	pass
 func _physics_process(_delta):
-	move_and_slide(movimiento)
+	print(move_and_slide(movimiento))
 	pass
 
 func temporizador():
