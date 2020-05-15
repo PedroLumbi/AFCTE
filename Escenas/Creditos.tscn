@@ -10,7 +10,7 @@ autostart = true
 
 [node name="Label" type="Label" parent="."]
 margin_right = 1280.0
-margin_bottom = 800.0
+margin_bottom = 712.0
 align = 1
 valign = 1
 __meta__ = {
@@ -19,9 +19,9 @@ __meta__ = {
 
 [node name="btnVolver" type="Button" parent="."]
 margin_left = 576.0
-margin_top = 728.0
+margin_top = 648.0
 margin_right = 640.0
-margin_bottom = 748.0
+margin_bottom = 668.0
 rect_scale = Vector2( 2, 2 )
 text = "Vovler"
 __meta__ = {
