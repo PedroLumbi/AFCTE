@@ -22,6 +22,11 @@ func _on_CerrarVentana_pressed():
 
 
 func _on_btnSalir_pressed():
-	get_tree().paused = false
 	print(get_tree().change_scene("res://Escenas/MenuPrincipal.tscn"))
+	pass # Replace with function body.
+
+
+func _on_btnEvidencias_pressed():
+	get_tree().paused = false
+	print(get_tree().change_scene("res://Escenas/PizzarraPistas.tscn"))
 	pass # Replace with function body.

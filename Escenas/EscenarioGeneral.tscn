@@ -50,31 +50,38 @@ text = "Pausa"
 [node name="VentanaPausa" type="WindowDialog" parent="Jugador/laCamara"]
 pause_mode = 2
 visible = true
-margin_left = -160.0
-margin_top = -60.0
-margin_right = 155.0
-margin_bottom = 73.0
+margin_left = -160.111
+margin_top = -66.205
+margin_right = 154.889
+margin_bottom = 66.795
 window_title = "Pausa"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="CerrarVentana" type="Button" parent="Jugador/laCamara/VentanaPausa"]
-margin_left = 120.0
-margin_top = 16.0
-margin_right = 200.0
-margin_bottom = 36.0
+margin_left = 221.053
+margin_top = 100.266
+margin_right = 301.053
+margin_bottom = 120.266
 text = "Continuar"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="btnSalir" type="Button" parent="Jugador/laCamara/VentanaPausa"]
-margin_left = 136.0
-margin_top = 72.0
-margin_right = 183.0
-margin_bottom = 92.0
+margin_left = 10.7922
+margin_top = 94.7701
+margin_right = 57.7922
+margin_bottom = 114.77
 text = "Salir"
+
+[node name="btnEvidencias" type="Button" parent="Jugador/laCamara/VentanaPausa"]
+margin_left = 122.216
+margin_top = 26.205
+margin_right = 201.216
+margin_bottom = 46.205
+text = "Evidencias"
 
 [node name="npc1" parent="." groups=[
 "npc",
@@ -88,3 +95,4 @@ stream = ExtResource( 5 )
 [connection signal="popup_hide" from="Jugador/laCamara/VentanaPausa" to="." method="_on_VentanaPausa_popup_hide"]
 [connection signal="pressed" from="Jugador/laCamara/VentanaPausa/CerrarVentana" to="." method="_on_CerrarVentana_pressed"]
 [connection signal="pressed" from="Jugador/laCamara/VentanaPausa/btnSalir" to="." method="_on_btnSalir_pressed"]
+[connection signal="pressed" from="Jugador/laCamara/VentanaPausa/btnEvidencias" to="." method="_on_btnEvidencias_pressed"]

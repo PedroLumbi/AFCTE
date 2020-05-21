@@ -52,3 +52,7 @@ func saleCuerpo(body):
 		cuerpo = null
 		$Timer.stop()
 		$dialogo.hide()
+
+
+func _on_btnEvidencias_pressed():
+	pass # Replace with function body.
