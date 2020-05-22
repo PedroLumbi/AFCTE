@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/504150__joao-janz__table-lamp-flip-switch-off-1-1.wav-bc9cc8d56cc5830983e4a587b639eb0d.sample"
+
+[deps]
+
+source_file="res://Sonido/504150__joao-janz__table-lamp-flip-switch-off-1-1.wav"
+dest_files=[ "res://.import/504150__joao-janz__table-lamp-flip-switch-off-1-1.wav-bc9cc8d56cc5830983e4a587b639eb0d.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

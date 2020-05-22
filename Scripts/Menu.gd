@@ -21,3 +21,11 @@ func Salir():
 func creditos():
 	print(get_tree().change_scene("res://Escenas/Creditos.tscn"))
 	pass
+
+
+
+
+
+func _on_Cuando_mouse_entered():
+	$SobreBoton.play()
+	pass # Replace with function body.
