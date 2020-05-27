@@ -54,5 +54,3 @@ func saleCuerpo(body):
 		$dialogo.hide()
 
 
-func _on_btnEvidencias_pressed():
-	pass # Replace with function body.

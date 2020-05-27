@@ -52,9 +52,9 @@ text = "Pausa"
 pause_mode = 2
 visible = true
 margin_left = -160.111
-margin_top = -66.205
+margin_top = -67.2576
 margin_right = 154.889
-margin_bottom = 66.795
+margin_bottom = 65.7424
 window_title = "Pausa"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -83,6 +83,12 @@ margin_top = 26.205
 margin_right = 201.216
 margin_bottom = 46.205
 text = "Evidencias"
+
+[node name="Evidencias" type="Label" parent="Jugador/laCamara/VentanaPausa"]
+margin_left = 207.368
+margin_top = 30.5263
+margin_right = 247.368
+margin_bottom = 44.5263
 
 [node name="npc1" parent="." groups=[
 "npc",

@@ -3,8 +3,14 @@ extends Node2D
 
 
 func _on_btnPausa_pressed():
+	
+	$Jugador/laCamara/VentanaPausa/Evidencias.text = str(E1.cantidadDeEvidencias)
+	
+	E1.cantidadDeEvidencias -= 1
+	
 	get_tree().paused = true
 	$AudioPausa.play()
+	
 	var posicion = $Jugador.position
 	posicion.x -= 150
 	posicion.y -= 50#correccion de la posicion de la ventana

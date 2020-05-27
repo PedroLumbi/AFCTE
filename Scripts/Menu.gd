@@ -1,7 +1,11 @@
 extends Control
 
 func NuevoJuego():
+	
+	G1.get_node("CambioEscena").play()
+	
 	print(get_tree().change_scene("res://Escenas/EscenarioGeneral.tscn"))
+	
 	#Nuevo juego sin guardar
 	pass
 

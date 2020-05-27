@@ -16,8 +16,14 @@ _global_script_class_icons={
 [application]
 
 config/name="AFCTE"
-run/main_scene="res://Escenas/MenuPrincipal.tscn"
+run/main_scene="res://Escenas/main.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+global="*res://Scripts/global.gd"
+E1="*res://Scripts/Evidencias1.gd"
+G1="*res://Escenas/Global.tscn"
 
 [display]
 
