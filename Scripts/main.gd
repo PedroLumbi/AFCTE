@@ -25,18 +25,11 @@ func guardarArchivo(texto, archivo):
 	f.close()
 	
 func _ready():
-	
 	print(cargarArchivo(archivo))
-	
-	
 	guardarArchivo(str(contador), archivo)
-	
 	var escena11  = global.escena1.instance()
-	
 	add_child(escena11)
-	
 	$Intro.play()
-	
 	pass 
 
 

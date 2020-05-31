@@ -134,6 +134,7 @@ text = "Version: 0.1
 "
 
 [node name="SobreBoton" type="AudioStreamPlayer2D" parent="."]
+position = Vector2( 640, 384 )
 stream = ExtResource( 5 )
 [connection signal="mouse_entered" from="btnNuevoJuego" to="." method="_on_Cuando_mouse_entered"]
 [connection signal="pressed" from="btnNuevoJuego" to="." method="NuevoJuego"]

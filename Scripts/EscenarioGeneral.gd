@@ -9,7 +9,7 @@ func _on_btnPausa_pressed():
 	E1.cantidadDeEvidencias -= 1
 	
 	get_tree().paused = true
-	$AudioPausa.play()
+	$Jugador/laCamara/AudioPausa.play()
 	
 	var posicion = $Jugador.position
 	posicion.x -= 150
@@ -40,5 +40,5 @@ func _on_btnEvidencias_pressed():
 	
 	
 func _on_Cuando_mouse_entered():
-	$SobreBoton.play()
+	$Jugador/laCamara/SobreBoton.play()
 	pass # Replace with function body.

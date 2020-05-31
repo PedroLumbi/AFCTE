@@ -90,17 +90,18 @@ margin_top = 30.5263
 margin_right = 247.368
 margin_bottom = 44.5263
 
+[node name="AudioPausa" type="AudioStreamPlayer" parent="Jugador/laCamara"]
+pause_mode = 2
+stream = ExtResource( 5 )
+
+[node name="SobreBoton" type="AudioStreamPlayer2D" parent="Jugador/laCamara"]
+position = Vector2( -272, -152 )
+stream = ExtResource( 6 )
+
 [node name="npc1" parent="." groups=[
 "npc",
 ] instance=ExtResource( 4 )]
 position = Vector2( 88, 18.395 )
-
-[node name="AudioPausa" type="AudioStreamPlayer" parent="."]
-pause_mode = 2
-stream = ExtResource( 5 )
-
-[node name="SobreBoton" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource( 6 )
 [connection signal="pressed" from="Jugador/laCamara/btnPausa" to="." method="_on_btnPausa_pressed"]
 [connection signal="popup_hide" from="Jugador/laCamara/VentanaPausa" to="." method="_on_VentanaPausa_popup_hide"]
 [connection signal="mouse_entered" from="Jugador/laCamara/VentanaPausa/CerrarVentana" to="." method="_on_Cuando_mouse_entered"]
