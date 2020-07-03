@@ -20,11 +20,6 @@ extents = Vector2( 11.5096, 13.819 )
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
-"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ) ],
-"loop": true,
-"name": "derecha",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ) ],
 "loop": true,
 "name": "abajo",
@@ -38,6 +33,11 @@ animations = [ {
 "frames": [ ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ) ],
 "loop": true,
 "name": "izquierda",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "derecha",
 "speed": 5.0
 } ]
 
@@ -66,7 +66,7 @@ shape = SubResource( 3 )
 
 [node name="dialogo" type="Sprite" parent="."]
 visible = false
-position = Vector2( -1.52588e-005, -42.2648 )
+position = Vector2( -1.52588e-05, -42.2648 )
 scale = Vector2( 4, 4 )
 texture = ExtResource( 14 )
 
